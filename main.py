@@ -45,3 +45,8 @@ print(sample_product)
 recommend(sample_product)
 print("\nChecking image column values:")
 print(df['img'].head(10))
+
+
+
+df = pd.read_csv("data/cleaned_fashion.csv")
+print(df.columns)
