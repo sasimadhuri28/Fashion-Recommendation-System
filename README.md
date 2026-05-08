@@ -1,86 +1,37 @@
-# 👗 Fashion Recommendation System using Machine Learning
+# 🛍️ Fashion Recommendation System
 
-A content-based fashion recommendation system built using Python, Machine Learning, and Streamlit.  
-The system suggests similar fashion products based on product descriptions, brand, color, and category.
+An AI-powered fashion recommendation web app built with Python and Streamlit,
+featuring a Myntra-style UI with smart product suggestions.
 
----
+## ✨ Features
 
-## 🚀 Features
+- 🔐 Login authentication
+- 👩👨 Browse by Gender — Women & Men
+- 🗂️ Category-wise product browsing (Saree, Kurta, Dress, Jeans, etc.)
+- 🔍 Search, filter by brand, price range & sort options
+- 🤖 ML-powered similar product recommendations (TF-IDF + Cosine Similarity)
+- 🎨 Myntra-style luxury UI with gold & charcoal theme
 
-- Login Authentication System
-- Product Search Functionality
-- Price Range Filter
-- Category-based Filtering
-- Rating-based Sorting
-- Image Display Support
-- TF-IDF Based Recommendation Engine
-- Cosine Similarity Matching
-- Interactive Web UI using Streamlit
+## 🧠 How It Works
 
----
+Product features (name, brand, colour, description) are combined into tags →
+converted to TF-IDF vectors → cosine similarity finds the top 5 most similar
+products in the same category.
 
-## 🧠 Technologies Used
+## 🚀 Run Locally
 
-- Python
-- Pandas
-- Scikit-learn
+```bash
+git clone https://github.com/sasimadhuri28/Fashion-Recommendation-System
+cd Fashion-Recommendation-System
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## 🔑 Login Credentials
+- **Username:** admin
+- **Password:** fashion123
+
+## 🛠️ Tech Stack
+- Python, Pandas, Scikit-learn
 - Streamlit
-- TF-IDF Vectorizer
-- Cosine Similarity
-- Machine Learning (Content-Based Filtering)
-
----
-
-## 📊 Dataset
-
-Fashion product dataset downloaded from Kaggle.  
-Contains product information such as:
-
-- Product Name  
-- Brand  
-- Color  
-- Price  
-- Rating  
-- Description  
-- Image URLs  
-
----
-
-## ⚙ How Recommendation Works
-
-1. Product text features are combined into a single column.
-2. TF-IDF Vectorizer converts text into numerical vectors.
-3. Cosine similarity measures similarity between products.
-4. Category filtering ensures relevant recommendations.
-5. Top 5 similar products are displayed.
-
----
-
-## ▶ How To Run The Project
-
-### Step 1: Install Dependencies
-
-
-### Step 2: Run Streamlit App
-
-
----
-
-## 📸 Output Preview
-
-- User Login Interface
-- Product Selection Panel
-- Recommended Product Display
-- Filter-Based Search System
-
----
-
-## 👩‍💻 Developed By
-
-Sasi Madhuri  
-B.Tech 3rd Year Student  
-Fashion Recommendation System Project
-
-
-
-
+- TF-IDF Vectorizer + Cosine Similarity
