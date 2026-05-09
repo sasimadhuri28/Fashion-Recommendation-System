@@ -1,4 +1,8 @@
+## 🌐 Live Demo
+👉 https://fashion-recommendation-sasimadhuri.streamlit.app
+
 # 🛍️ Fashion Recommendation System
+
 
 An AI-powered fashion recommendation web app built with Python and Streamlit,
 featuring a Myntra-style UI with smart product suggestions.
