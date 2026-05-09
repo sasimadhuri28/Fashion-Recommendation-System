@@ -264,7 +264,7 @@ def analyze_image_and_recommend(image_bytes: bytes, mime_type: str, n: int = 8):
 }
 Return ONLY the JSON, no extra text."""
 
-    api_key = os.environ.get("GEMINI_API_KEY", "")
+    api_key = ""
     
     if api_key and api_key != "YOUR_GEMINI_API_KEY":
         import google.generativeai as genai
