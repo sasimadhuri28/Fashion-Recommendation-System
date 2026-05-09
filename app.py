@@ -1,9 +1,5 @@
 import streamlit as st
 import pandas as pd
-import os
-# Set your free Gemini API key here, or leave as is to use the offline Mock Analyzer
-
-import base64
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
